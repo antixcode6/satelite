@@ -5,6 +5,13 @@ ul {
     list-style-type: none;
     font-size: 1.5em;
 }
-div {
-    color: white;
+
+#section_title {
+    color: white;	
+}
+#software-jumbotron {
+    background-color: white;
+}
+a:link {
+  text-decoration: none;
 }
