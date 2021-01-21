@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{ variable|escape }}</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="main.css">
+  </head>
+  <body>
+<div class="container">
+  <div class="row">
+    <div class="col-sm">
+    </div>
+    <div class="col-sm">
+      <h3>Software we support</h3>
+    </div>
+    <div class="col-sm">
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm">
+    </div>
+    <div class="col-sm">
+        <ul>
+    {%- for item in item_list %}
+      <li><a href = "{{item}}.html">{{ item }}</a>{% if not loop.last %}</li>{% endif %}
+    {%- endfor %}
+  </ul>
+    </div>
+    <div class="col-sm">
+    </div>
+  </div>
+</div>
+  </body>
+</html>
